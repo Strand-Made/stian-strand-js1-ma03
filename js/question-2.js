@@ -1,31 +1,37 @@
-// question 2
-const urlApi =
-  "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating";
+//question 2
 
-const gamesContainer = document.querySelector(".gamesContainer");
+const url = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating";
+const rawgContainer = document.querySelector(".gamesContainer");
 
-async function getGames() {
-  const response = await fetch(urlApi);
+async function getRawg() {
+    // fetch api
 
-  const result = await response.json();
+    const response = await fetch(url);
 
-  console.log(result);
+    const apiFeed = await response.json();
+    
+    const games = apiFeed.results;
 
-  const videoGames = result.all;
+    rawgContainer.innerHTML= "";
 
-  console.log(videoGames);
+    for(let i = 0; i < games.length; i++) {
+        console.log(games[i]);
 
-  //gamesContainer.innerHTML = "";
+        if ( i === 8) {
+            break;
+        }
 
-  for (let i = 0; i < videoGames.length; i++) {
-    console.log(videoGames[i].text);
-
-    if (i === 9) {
-      break;
+        rawgContainer.innerHTML += `<div class="result">${games[i].name} ${games[i].rating} ${games.length}</div>`;
     }
+    
 
-    gamesContainer.innerHTML += `<div class="result"> ${videoGames[i].text} </div>`;
-  }
+
+
+    
+
 }
 
-getGames();
+getRawg();
+
+
+

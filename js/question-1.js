@@ -2,6 +2,6 @@
 
 const division = (a, b) => a % b;
 
-const result = division(25, 12);
+const resultArrow = division(25, 12);
 
-console.log(result);
+console.log(resultArrow);
