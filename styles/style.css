@@ -1,0 +1,27 @@
+h3 {
+    font-size: 1.1em;
+    opacity: 0.7;
+    text-align: center;
+}
+
+
+
+.result {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    min-width: 150px;
+    height: 200px;
+    margin: 25px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 1em;
+    b
+
+}
+
+.gamesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

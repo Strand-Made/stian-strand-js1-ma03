@@ -21,7 +21,7 @@ async function getRawg() {
             break;
         }
 
-        rawgContainer.innerHTML += `<div class="result">${games[i].name} ${games[i].rating} ${games.length}</div>`;
+        rawgContainer.innerHTML += `<div class="result"><h3>${games[i].name}</h3> <p> Rating: ${games[i].rating}</p> <p>Tags ${games.length}</p></div>`;
     }
     
 
