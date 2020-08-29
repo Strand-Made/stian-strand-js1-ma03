@@ -22,7 +22,7 @@ async function getRawg() {
             break;
             }
 
-            rawgContainer.innerHTML += `<div class="result"><h3>${games[i].name}</h3> <p> Rating: ${games[i].rating}</p> <p>Tags: ${games[i].tags.length}</p></div>`;
+            rawgContainer.innerHTML += `<div class="result"><h3>${games[i].name}</h3> <p>Rating: ${games[i].rating}</p> <p>Tags: ${games[i].tags.length}</p></div>`;
         }   
     
     } catch (error) {

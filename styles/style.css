@@ -1,8 +1,15 @@
 @import '/styles/loader.css';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 html {
     background-color: #696969;
 }
+
+h1 {
+    text-align: center;
+}
+
 h1,h3, p {
+    font-family: 'Source Sans Pro', sans-serif;
     color: #F5F5F5;
     
 }
@@ -29,5 +36,5 @@ h3 {
     flex-direction: row;
     margin: 0 auto;
     flex-wrap: wrap;
-    max-width: 750px;
+    max-width: 900px;
 }
