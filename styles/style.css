@@ -1,8 +1,8 @@
-@import '/styles/loader.css'
+@import '/styles/loader.css';
 html {
     background-color: #696969;
 }
-h3, p {
+h1,h3, p {
     color: #F5F5F5;
     
 }
@@ -12,8 +12,6 @@ h3 {
     text-align: center;
 }
 
-
-
 .result {
     display: flex;
     flex-direction: column;
@@ -22,12 +20,14 @@ h3 {
     height: 200px;
     margin: 25px;
     padding: 10px;
-    border: 1px solid grey;
+    border: 1px solid salmon;
     border-radius: 1em;
 }
 
 .gamesContainer {
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
     flex-wrap: wrap;
+    max-width: 750px;
 }
