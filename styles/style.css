@@ -4,19 +4,24 @@ html {
     background-color: #696969;
 }
 
-h1 {
-    text-align: center;
-}
-
 h1,h3, p {
     font-family: 'Source Sans Pro', sans-serif;
     color: #F5F5F5;
     
 }
 
+h1 {
+    text-align: center;
+}
+
+
 h3 {
     font-size: 1.1em;
     text-align: center;
+}
+
+p {
+    font-size: 15px;
 }
 
 .result {
